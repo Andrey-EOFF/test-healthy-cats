@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Cats</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="/">
+        <img src="/images/header_logo.png" alt="" />
+      </a>
+
+      <ul>
+        <li>ORDER</li>
+        <li>ABOUT</li>
+        <li>RESULTS</li>
+      </ul>
+    </header>
+    <main>
+      <section class="Hero">
+        <h1>Pet Naturals of Vermont, Calming, For Cats</h1>
+
+        <div>
+          <p>
+            Your cat deserves the best pet supplement the world has to offer.
+            That's what's in the package.
+          </p>
+          <ul>
+            <li>Features a patented calming blend</li>
+            <li>Doesn’t contain herbal ingredients</li>
+            <li>Helps manage everyday stress</li>
+          </ul>
+        </div>
+        <img src="/images/hero-cats.png" alt="cats" />
+        <div class="order-form">
+          <h2>TIME LEFT</h2>
+          <p>Остаток времени - <span id="time">2:00:00</span></p>
+          <p>
+            Ціна без скидки - <span id="price-original">120uah</span> - Ціна зі
+            знижкою - <span id="price-discounted">60uah</span>
+          </p>
+
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <button type="submit">ORDER</button>
+          </form>
+
+          <p>Order data: <span id="order-date">11.04.2024</span></p>
+        </div>
+      </section>
+      <section class="about">
+        <h2>From the manufacturer</h2>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+      <section class="results"></section>
+    </main>
+  </body>
+</html>
