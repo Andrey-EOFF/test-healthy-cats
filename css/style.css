@@ -1,0 +1,140 @@
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto-bold';
+    src: url('/fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+
+:root {
+
+    --main-bg-color:#FFFFFF;
+    --header-text-color:#715D00;
+    --hero-titel-color:#F9E994;
+}
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+body {
+    background-color:var(--main-bg-color);
+    font-family: 'Roboto-regular', 'Roboto-bold', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    min-width: 360px;
+    max-width: 1140px;
+  
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
+/* Header ////////////////////////////////////////////////// */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header Logo //////////////////////////////////////////////*/
+/* .header__logo {} */
+
+/* Header Navigation */
+
+/* Стилі для мобільного вигляду */
+.header__navigation {
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.header__navigation-item {
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media screen and (min-width: 768px)  {
+    .header__navigation {
+     flex-direction: row;
+        justify-content: center;
+        font-size: 52px;
+        line-height: 1.17;
+        transition: all 0.3s ease; /* Плавний перехід для зміни стилів */
+    }
+
+    .header__navigation-item {
+        flex-direction: row;
+        margin-right: 51px;
+    }
+
+    .header__navigation-item:last-child {
+        margin-right: 0;
+    }
+}
+
+/* .header__navigation-item {} */
+
+/* Hero //////////////////////////////////////////////////////*/
+/* .hero {}
+.hero__title {}
+.hero__description {}
+.hero__features {}
+.hero__feature {}
+.hero__image {}
+.hero__order-form {}
+.hero__time-left {}
+.hero__price-info {}
+.hero__price-original {}
+.hero__price-discounted {}
+.hero__form-group {}
+.hero__label {}
+.hero__input {}
+.hero__button {}
+.hero__order-date {} */
+
+/* About //////////////////////////////////////////////////////*/
+/* .about {}
+.about__title {}
+.about__item {}
+.about__item-image {}
+.about__item-description {} */
+
+/* Results ////////////////////////////////////////////////////*/
+/* .results {}
+.results__title {}
+.results__description {}
+.results__image {} */
+
+.results__description {
+font-size: 18px;
+font-weight: 400;
+line-height: 23px;
+text-align: left;
+
+}

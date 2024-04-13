@@ -7,94 +7,153 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <a href="/">
+    <header class="container header">
+      <a href="/" class="header__logo">
         <img src="/images/header_logo.png" alt="" />
       </a>
 
-      <ul>
-        <li>ORDER</li>
-        <li>ABOUT</li>
-        <li>RESULTS</li>
+      <ul class="header__navigation">
+        <li class="header__navigation-item">ORDER</li>
+        <li class="header__navigation-item">ABOUT</li>
+        <li class="header__navigation-item">RESULTS</li>
       </ul>
     </header>
-    <main>
-      <section class="Hero">
-        <h1>Pet Naturals of Vermont, Calming, For Cats</h1>
 
-        <div>
-          <p>
-            Your cat deserves the best pet supplement the world has to offer.
-            That's what's in the package.
-          </p>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            Pet Naturals of Vermont, Calming, For Cats
+          </h1>
+
+          <div class="hero__description">
+            <p>
+              Your cat deserves the best pet supplement the world has to offer.
+              That's what's in the package.
+            </p>
+            <ul class="hero__features">
+              <li class="hero__feature">Features a patented calming blend</li>
+              <li class="hero__feature">Doesn’t contain herbal ingredients</li>
+              <li class="hero__feature">Helps manage everyday stress</li>
+            </ul>
+          </div>
+          <img src="/images/hero-cats.png" alt="cats" class="hero__image" />
+          <div class="hero__order-form">
+            <h2 class="hero__time-left">TIME LEFT</h2>
+            <p>Остаток времени - <span id="time">2:00:00</span></p>
+            <p>
+              Ціна без скидки -
+              <span class="hero__price-original">120uah</span> - Ціна зі знижкою
+              - <span class="hero__price-discounted">60uah</span>
+            </p>
+
+            <form action="#" method="POST">
+              <div class="hero__form-group">
+                <label for="name" class="hero__label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="hero__input"
+                  required
+                />
+              </div>
+              <div class="hero__form-group">
+                <label for="phone" class="hero__label">Phone</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="hero__input"
+                  required
+                />
+              </div>
+              <button type="submit" class="hero__button">ORDER</button>
+            </form>
+
+            <p>
+              Order data:
+              <span id="order-date" class="hero__order-date">11.04.2024</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title">From the manufacturer</h2>
           <ul>
-            <li>Features a patented calming blend</li>
-            <li>Doesn’t contain herbal ingredients</li>
-            <li>Helps manage everyday stress</li>
+            <li class="about__item">
+              <img
+                src="/images/about-cat.png"
+                alt=""
+                class="about__item-image"
+              />
+              <div class="about__item-description">
+                <h2>Keep Calm and Carry On</h2>
+                <p>
+                  Are you searching for a better way to ease your pet’s
+                  separation anxiety or stress? Calming chews help relieve pet
+                  stress without corn, wheat or artificial ingredients.
+                </p>
+              </div>
+            </li>
+            <li class="about__item">
+              <img
+                src="/images/about-flawer.png"
+                alt=""
+                class="about__item-image"
+              />
+              <div class="about__item-description">
+                <h2>Peace of Mind</h2>
+                <p>
+                  Pet Naturals of Vermont’s research-backed formula makes it
+                  safe to double or triple the amount in times of added stress.
+                </p>
+              </div>
+            </li>
+            <li class="about__item">
+              <img
+                src="/images/about-feed.png"
+                alt=""
+                class="about__item-image"
+              />
+              <div class="about__item-description">
+                <h2>More than a Tasty Treat</h2>
+                <p>
+                  Don’t let its satisfying chicken liver flavor fool you.
+                  Technically, Calming isn’t a treat but it sure tastes like
+                  one. Reward your best buddy with a Calming chew.
+                </p>
+              </div>
+            </li>
           </ul>
         </div>
-        <img src="/images/hero-cats.png" alt="cats" />
-        <div class="order-form">
-          <h2>TIME LEFT</h2>
-          <p>Остаток времени - <span id="time">2:00:00</span></p>
-          <p>
-            Ціна без скидки - <span id="price-original">120uah</span> - Ціна зі
-            знижкою - <span id="price-discounted">60uah</span>
-          </p>
+      </section>
 
-          <form action="#" method="POST">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" required />
-            </div>
-            <button type="submit">ORDER</button>
-          </form>
-
-          <p>Order data: <span id="order-date">11.04.2024</span></p>
+      <section class="results">
+        <div class="container">
+          <h2 class="results__title">Best Uses for Calming Chews</h2>
+          <div class="results__description">
+            <p>
+              Car rides. Vet visits. Thunderstorms. Boarding. Parties. These are
+              just a handful of times when Calming chews may come in handy. Does
+              your dog hate to be left home alone? Does your cat love hiding
+              under the bed? Serve up a Calming chew to help soothe your furry
+              pal’s anxiety and make your life easier, too!
+            </p>
+            <p>For Best Results:</p>
+            <p>
+              We recommend administering Calming chews 30 minutes prior to a
+              stressful event. The 30-minute activation period gives you a
+              chance to increase dosage if you’re not seeing expected results.
+              Calming is safe for unique stress inducing events and for
+              long-term use to help manage everyday stress.
+            </p>
+          </div>
+          <img src="/images/results-cat.png" alt="" class="results__image" />
         </div>
       </section>
-      <section class="about">
-        <h2>From the manufacturer</h2>
-        <ul>
-          <li>
-            <img src="/images/about-cat.png" alt="" />
-            <div>
-              <h2>Keep Calm and Carry On</h2>
-              <p>
-                Are you searching for a better way to ease your pet’s separation
-                anxiety or stress? Calming chews help relieve pet stress without
-                corn, wheat or artificial ingredients.
-              </p>
-            </div>
-          </li>
-          <li>
-            <img src="/images/about-flawer.png" alt="" />
-            <div>
-              <h2>Peace of Mind</h2>
-              <p>
-                Pet Naturals of Vermont’s research-backed formula makes it safe
-                to double or triple the amount in times of added stress.
-              </p>
-            </div>
-          </li>
-          <li>
-            <img src="/images/about-feed.png" alt="" />
-            <div>
-              <h2>More than a Tasty Treat</h2>
-              <p>
-                Don’t let its satisfying chicken liver flavor fool you.
-                Technically, Calming isn’t a treat but it sure tastes like one.
-                Reward your best buddy with a Calming chew.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="results"></section>
     </main>
   </body>
 </html>
