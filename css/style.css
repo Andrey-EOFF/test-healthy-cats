@@ -80,6 +80,11 @@ p {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Стандартні скидання для картинок */
 img {
     vertical-align: middle;
