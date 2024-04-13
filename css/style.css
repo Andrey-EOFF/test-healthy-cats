@@ -630,3 +630,10 @@ textarea {
 
 
 }
+
+
+/* A b O U T //////////////////////////////////////////////////////////////// */
+
+.about {
+    background: url(/images/about-bg-img.png);
+}
