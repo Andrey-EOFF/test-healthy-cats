@@ -39,8 +39,15 @@ window.onload = function () {
   startTimer(twoHours, display);
 };
 
-// -- маска телефону -- //
-document.addEventListener("DOMContentLoaded", function () {
-  var phoneInput = document.getElementById("phoneInput");
-  Inputmask("+38(099)999-99-99").mask(phoneInput);
-});
+
+// -- дата у формі -- //
+var today = new Date();
+
+var day = today.getDate();
+var month = today.getMonth() + 1; 
+var year = today.getFullYear();
+
+var formattedDate = (day < 10 ? '0' : '') + day + '.' + (month < 10 ? '0' : '') + month + '.' + year;
+
+document.getElementById('order-date').textContent = formattedDate;
+

@@ -177,8 +177,12 @@ textarea {
         height: 90px;
         width: 283px;
     }
-}
 
+    &:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+}
 
 .header-cloud-menu {
 
@@ -189,7 +193,7 @@ textarea {
         align-items: center;
         width: 446px;
         justify-content: space-around;
-        transition: width 10.5s ease, height 0.5s ease;
+        transition: width 0.5s ease, height 0.5s ease;
     }
 }
 
@@ -231,9 +235,6 @@ textarea {
     }
 }
 
-
-
-
 .header__navigation-item:hover,
 .header__navigation-item:focus {
     color: #F9E994;
@@ -242,10 +243,8 @@ textarea {
 .header__navigation-item:hover::after,
 .header__navigation-item:focus::after {
     border-color: #F9E994;
-    transform: scaleY(1.5);
+    transform: scaleY(1.3);
 }
-
-
 
 /* Hero ///////////////////////////////////////////////////////////////////////////////*/
 
@@ -254,9 +253,10 @@ textarea {
     position: relative;
     padding: 120px 20px 100px 20px;
 
-    background-color: #FFFFFF;
+    background-color: var(--bg-main-color);
     background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/images/hero-bg-img.webp);
     background-repeat: no-repeat;
+    background-size: cover;
 
     @media (min-width: 1140px) {
 
@@ -341,13 +341,11 @@ textarea {
 
     @media (min-width: 768px) {
 
-
         font-size: 26px;
         font-weight: 700;
         line-height: 1.3;
         text-align: left;
         width: 439px;
-
 
         margin-bottom: 60px;
 
@@ -413,11 +411,13 @@ textarea {
     width: 18px;
     height: 24px;
     background-image: url(/images/icon-cats.svg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 
     @media (min-width: 768px) {
         margin-right: 18px;
+        width: 36px;
+        height: 24px;
     }
 
 }
@@ -518,9 +518,24 @@ textarea {
 }
 
 .order__price-original {
+    position: relative; 
     margin-right: 16px;
     font-size: 30px;
     color: var(--text-sale-price);
+    display: inline-block; 
+
+
+    &::after {
+        content: ""; 
+        position: absolute; 
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px; 
+        background-color: #F6BE91; 
+        transform: rotate(-17deg); 
+        transform-origin: left bottom; 
+    }
 }
 
 .order__price-discounted {
@@ -584,19 +599,32 @@ textarea {
 
 
 .order__form-button {
-
     width: 100%;
     height: 50px;
     border-radius: 16px;
     background-color: var(--bg-button-color);
-
     color: var(--text-white-color);
     font-size: 30px;
     font-weight: 700;
     line-height: 1.16;
     text-align: center;
 
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--bg-hero-akcent); 
+        transform: scale(1.03); 
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    &:focus {
+        background-color: var(--bg-hero-akcent); 
+        outline: none; 
+        transform: scale(1.03); 
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
 }
+
 
 .order__data-form {
 
@@ -754,7 +782,7 @@ textarea {
 /* R E S U L T S//////////////////////////////////////////////////////////////// */
 .result-bg {
 
-    padding: 30px 20px;
+    padding: 30px 20px 90px 20px;
 
     background: url(/images/results-bg-img.webp);
 
@@ -788,16 +816,23 @@ textarea {
     }
 }
 
-.results__description-block {
-    border: 0;
-    padding: 40px 98px 40px 40px;
-    background: url(/images/results-border.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 354px;
-    max-width: 760px;
-    overflow: hidden;
+
+@media (min-width: 768px) {
+    .results__description-block {
+
+
+        border: 0;
+        padding: 40px 98px 40px 40px;
+        background: url(/images/results-border.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 354px;
+        max-width: 760px;
+        overflow: hidden;
+    }
 }
+
 
 .results__description {
     display: flex;
@@ -810,18 +845,26 @@ textarea {
     }
 }
 
+.results__description-block-text {
+
+    max-height: 280px;
+    overflow: hidden;
+}
+
+
 .results__description-text {
     color: var(--text-card-text);
     font-size: 18px;
     font-weight: 400;
     line-height: 1.17;
     text-align: left;
-    word-wrap: break-word; 
-    overflow-wrap: break-word; 
-    
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-bottom: 1em;
+
     @media (min-width: 768px) {
-       max-width: 760px;
-       margin-bottom: 1em;
+        max-width: 760px;
+
     }
 }
 
@@ -837,4 +880,3 @@ textarea {
 
     }
 }
-
