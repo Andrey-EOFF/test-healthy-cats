@@ -318,7 +318,7 @@ textarea {
     @media (min-width: 768px) {
 
 
-        width: 320px;
+        max-width: 320px;
         margin-bottom: 0px;
 
     }
@@ -358,6 +358,14 @@ textarea {
     padding: 20px;
 
     width: 100%;
+
+    @media (min-width: 768px) {
+
+        max-width: 323px;
+        padding: 35px;
+
+
+    }
 
     @media (min-width: 1140px) {
 
@@ -403,24 +411,24 @@ textarea {
 }
 
 .hero__feature::before {
-
     display: inline-block;
-
     content: "";
     margin-right: 10px;
     width: 18px;
     height: 24px;
     background-image: url(/images/icon-cats.svg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+}
 
-    @media (min-width: 768px) {
+@media (min-width: 768px) {
+    .hero__feature::before {
         margin-right: 18px;
         width: 36px;
         height: 24px;
     }
-
 }
+
 
 .hero__img-size {
 
@@ -432,11 +440,13 @@ textarea {
 
     @media (min-width: 768px) {
         display: block;
+        max-width: 710px;
+        max-height: 417px;
     }
 
     @media (min-width: 1140px) {
-        max-width: 710px;
-        max-height: 417px;
+        width: 710px;
+        height: 417px;
     }
 
 }
@@ -653,8 +663,9 @@ textarea {
 }
 
 .about-bg {
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: url(/images/about-bg-img.png);
 
     padding: 48px;
@@ -702,7 +713,12 @@ textarea {
         align-items: center;
         gap: 0px;
         justify-content: center;
-    }
+    };
+
+    @media (min-width: 1140px) {
+        width: 1140px;
+
+    };
 }
 
 .about__item {
