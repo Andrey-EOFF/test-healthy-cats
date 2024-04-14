@@ -83,6 +83,7 @@
                     ></use>
                   </svg>
                   <input
+                    id="phoneInput"
                     class="hero__input"
                     type="tel"
                     name="phone"
@@ -104,53 +105,56 @@
 
       <section id="about" class="about">
         <div class="container">
-          <h2 class="about__title">From the manufacturer</h2>
-          <ul>
-            <li class="about__item">
-              <img
-                src="/images/about-cat.webp"
-                alt=""
-                class="about__item-image"
-              />
-              <div class="about__item-description">
-                <h2>Keep Calm and Carry On</h2>
-                <p>
-                  Are you searching for a better way to ease your pet’s
-                  separation anxiety or stress? Calming chews help relieve pet
-                  stress without corn, wheat or artificial ingredients.
-                </p>
-              </div>
-            </li>
-            <li class="about__item">
-              <img
-                src="/images/about-flawer.webp"
-                alt=""
-                class="about__item-image"
-              />
-              <div class="about__item-description">
-                <h2>Peace of Mind</h2>
-                <p>
-                  Pet Naturals of Vermont’s research-backed formula makes it
-                  safe to double or triple the amount in times of added stress.
-                </p>
-              </div>
-            </li>
-            <li class="about__item">
-              <img
-                src="/images/about-feed.webp"
-                alt=""
-                class="about__item-image"
-              />
-              <div class="about__item-description">
-                <h2>More than a Tasty Treat</h2>
-                <p>
-                  Don’t let its satisfying chicken liver flavor fool you.
-                  Technically, Calming isn’t a treat but it sure tastes like
-                  one. Reward your best buddy with a Calming chew.
-                </p>
-              </div>
-            </li>
-          </ul>
+          <div class="about-bg">
+            <h2 class="about__title">From the manufacturer</h2>
+            <ul class="about__list">
+              <li class="about__item">
+                <img
+                  src="/images/about-cat.webp"
+                  alt=""
+                  class="about__item-image"
+                />
+                <div class="about__item-description">
+                  <h2>Keep Calm and Carry On</h2>
+                  <p>
+                    Are you searching for a better way to ease your pet’s
+                    separation anxiety or stress? Calming chews help relieve pet
+                    stress without corn, wheat or artificial ingredients.
+                  </p>
+                </div>
+              </li>
+              <li class="about__item">
+                <img
+                  src="/images/about-flawer.webp"
+                  alt=""
+                  class="about__item-image"
+                />
+                <div class="about__item-description">
+                  <h2>Peace of Mind</h2>
+                  <p>
+                    Pet Naturals of Vermont’s research-backed formula makes it
+                    safe to double or triple the amount in times of added
+                    stress.
+                  </p>
+                </div>
+              </li>
+              <li class="about__item">
+                <img
+                  src="/images/about-feed.webp"
+                  alt=""
+                  class="about__item-image"
+                />
+                <div class="about__item-description">
+                  <h2>More than a Tasty Treat</h2>
+                  <p>
+                    Don’t let its satisfying chicken liver flavor fool you.
+                    Technically, Calming isn’t a treat but it sure tastes like
+                    one. Reward your best buddy with a Calming chew.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -180,5 +184,6 @@
     </main>
 
     <script src="/js/modal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/inputmask.min.js"></script>
   </body>
 </html>

@@ -633,7 +633,52 @@ textarea {
 
 
 /* A b O U T //////////////////////////////////////////////////////////////// */
-
 .about {
-    background: url(/images/about-bg-img.png);
+    margin-top: 52px;
 }
+
+.about-bg {
+
+   
+    background: url(/images/about-bg-img.png);
+
+}
+
+.about__title {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+
+
+    background: linear-gradient(180deg, #F9E994 0%, #537D13 56.25%, #483C08 100%);
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent; 
+}
+
+.about__list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about__item {
+  
+  }
+  
+  .about__item-image {
+ 
+  }
+  
+  .about__item-description {
+   
+  }
+  
+  .about__item-description h2 {
+    
+  }
+  
+
+
+  
+

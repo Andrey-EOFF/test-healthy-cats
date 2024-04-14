@@ -38,3 +38,9 @@ window.onload = function () {
   var display = document.getElementById("time");
   startTimer(twoHours, display);
 };
+
+// -- маска телефону -- //
+document.addEventListener("DOMContentLoaded", function () {
+  var phoneInput = document.getElementById("phoneInput");
+  Inputmask("+38(099)999-99-99").mask(phoneInput);
+});
