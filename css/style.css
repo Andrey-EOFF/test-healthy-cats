@@ -12,7 +12,6 @@
     font-style: normal;
 }
 
-
 :root {
 
     --text-white-color: #FFFFFF;
@@ -29,10 +28,6 @@
     --text-card-text: #483C08;
     --text-results-title: #537D13;
 
-
-
-
-
     --bg-main-color: #FFFFFF;
     --bg-hero-akcent: #7FB3E1;
     --bg-form-color: #FDFCFC;
@@ -40,8 +35,6 @@
     --bg-button-color: #A1D337;
     --bg-about-color: #F6E791;
     --bg-about-descript-color: #A1D33766;
-
-
 
     --mobile-width-card: 420px;
 
@@ -60,6 +53,7 @@ html {
 body {
     background-color: var(--bg-main-color);
     font-family: 'Roboto-regular', 'Roboto-bold', sans-serif;
+    line-height: 1.17;
     margin: 0;
 
     -webkit-font-smoothing: antialiased;
@@ -67,7 +61,6 @@ body {
 
 }
 
-/* Стандартні скидання для заголовків */
 h1,
 h2,
 h3,
@@ -78,7 +71,7 @@ h6 {
     margin-bottom: 0.5rem;
 }
 
-/* Стандартні скидання для списків */
+
 ul,
 ol {
     list-style: none;
@@ -95,7 +88,6 @@ a {
     color: inherit;
 }
 
-/* Стандартні скидання для картинок */
 img {
     vertical-align: middle;
     border-style: none;
@@ -103,7 +95,6 @@ img {
     height: auto;
 }
 
-/* Стандартні скидання для кнопок */
 button,
 input,
 optgroup,
@@ -115,7 +106,6 @@ textarea {
     line-height: inherit;
     border: none;
 }
-
 
 .container {
     min-width: 360px;
@@ -134,11 +124,11 @@ textarea {
 }
 
 
-/* Header ////////////////////////////////////////////////// */
+/* Header //////////////////////// */
 .header {
     display: flex;
     justify-content: space-between;
-    
+
     align-items: center;
     position: absolute;
     top: 10px;
@@ -158,8 +148,7 @@ textarea {
 }
 
 
-
-/* Header Logo //////////////////////////////////////////////*/
+/* Header Logo //////////////////////// */
 .header-cloud-logo {
     background: url(/images/header-cloud-logo.webp);
     background-repeat: no-repeat;
@@ -167,8 +156,6 @@ textarea {
     background-position: 50%;
 
     padding: 15px;
-
-
 }
 
 .header img {
@@ -200,7 +187,6 @@ textarea {
     }
 }
 
-
 .header__navigation {
     display: flex;
     flex-direction: column;
@@ -209,7 +195,6 @@ textarea {
     text-align: center;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.17;
     transition: gap 0.5s ease, flex-direction 0.5s ease;
 
     @media (min-width: 768px) {
@@ -249,7 +234,7 @@ textarea {
     transform: scaleY(1.3);
 }
 
-/* Hero ///////////////////////////////////////////////////////////////////////////////*/
+/* Hero //////////////////////// */
 
 .hero {
 
@@ -275,7 +260,7 @@ textarea {
     margin: 0;
     font-size: 34px;
     font-weight: 700;
-    line-height: 1.17;
+
     text-align: center;
     color: var(--hero-titel-color);
 
@@ -283,10 +268,9 @@ textarea {
         margin: 0;
         font-size: 52px;
         font-weight: 700;
-        line-height: 1.17;
+
         text-align: center;
     }
-
 }
 
 .hero__content {
@@ -310,7 +294,6 @@ textarea {
     }
 }
 
-
 .hero__description {
     display: flex;
     justify-content: center;
@@ -327,8 +310,6 @@ textarea {
     }
 }
 
-
-
 .hero__text_one {
 
     color: #F6F7E4;
@@ -339,7 +320,7 @@ textarea {
 
     font-size: 18px;
     font-weight: 700;
-    line-height: 1.18;
+
     text-align: right;
 
     @media (min-width: 768px) {
@@ -385,14 +366,11 @@ textarea {
     display: flex;
     align-items: center;
 
-
     color: var(--hero-text-feature);
     font-size: 18px;
     font-weight: 700;
     line-height: 1.18;
     text-align: left;
-
-
 
     @media (min-width: 768px) {
 
@@ -401,7 +379,6 @@ textarea {
         line-height: 1.14;
 
     }
-
 }
 
 .hero__feature:not(:last-child) {
@@ -432,7 +409,6 @@ textarea {
     }
 }
 
-
 .hero__img-size {
 
     display: none;
@@ -451,20 +427,13 @@ textarea {
         width: 710px;
         height: 417px;
     }
-
 }
 
 .hero__image {
     width: 100%;
 }
 
-
-
-
-
-/* F O R M /////////////////////////////////////////////////////////////////// */
-
-
+/* F O R M //////////////////////// */
 
 .order {
 
@@ -481,7 +450,6 @@ textarea {
     @media (min-width: 768px) {
         max-width: 270px;
     }
-
 }
 
 .order-info {
@@ -494,8 +462,6 @@ textarea {
 
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
-
 }
 
 .order__title {
@@ -505,7 +471,6 @@ textarea {
     color: var(--text-form-title);
     font-size: 33px;
     font-weight: 700;
-    line-height: 1.16;
     text-align: center;
 }
 
@@ -514,7 +479,7 @@ textarea {
     color: var(--text-form-time);
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.17;
+
     text-align: center;
 
 }
@@ -525,29 +490,28 @@ textarea {
     align-items: center;
 
     font-weight: 700;
-    line-height: 1.17;
     text-align: center;
 
 }
 
 .order__price-original {
-    position: relative; 
+    position: relative;
     margin-right: 16px;
     font-size: 30px;
     color: var(--text-sale-price);
-    display: inline-block; 
+    display: inline-block;
 
 
     &::after {
-        content: ""; 
-        position: absolute; 
+        content: "";
+        position: absolute;
         left: 0;
         bottom: 0;
         width: 100%;
-        height: 2px; 
-        background-color: #F6BE91; 
-        transform: rotate(-17deg); 
-        transform-origin: left bottom; 
+        height: 2px;
+        background-color: #F6BE91;
+        transform: rotate(-17deg);
+        transform-origin: left bottom;
     }
 }
 
@@ -581,10 +545,8 @@ textarea {
 
     font-size: 16px;
     font-weight: 700;
-    line-height: 1.17;
     text-align: left;
     color: var(--text-input-color);
-
 
 }
 
@@ -609,8 +571,6 @@ textarea {
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
-
-
 .order__form-button {
     width: 100%;
     height: 50px;
@@ -625,19 +585,18 @@ textarea {
     cursor: pointer;
 
     &:hover {
-        background-color: var(--bg-hero-akcent); 
-        transform: scale(1.03); 
+        background-color: var(--bg-hero-akcent);
+        transform: scale(1.03);
         transition: background-color 0.3s ease, transform 0.3s ease;
     }
 
     &:focus {
-        background-color: var(--bg-hero-akcent); 
-        outline: none; 
-        transform: scale(1.03); 
+        background-color: var(--bg-hero-akcent);
+        outline: none;
+        transform: scale(1.03);
         transition: background-color 0.3s ease, transform 0.3s ease;
     }
 }
-
 
 .order__data-form {
 
@@ -653,11 +612,9 @@ textarea {
 
 }
 
-
-/* A b O U T //////////////////////////////////////////////////////////////// */
+/* A b O U T //////////////////////// */
 .about {
     margin-top: 52px;
-
 
     @media (min-width: 768px) {
         padding: 0px 71px;
@@ -678,7 +635,6 @@ textarea {
 
     font-size: 34px;
     font-weight: 700;
-    line-height: 1.17;
     text-align: center;
 
     margin-bottom: 30px;
@@ -697,12 +653,6 @@ textarea {
 
 }
 
-
-
-
-
-
-
 .about__list {
     display: flex;
     flex-direction: column;
@@ -716,12 +666,15 @@ textarea {
         align-items: center;
         gap: 0px;
         justify-content: center;
-    };
+    }
+
+    ;
 
     @media (min-width: 1140px) {
         width: 1140px;
+    }
 
-    };
+    ;
 }
 
 .about__item {
@@ -740,13 +693,11 @@ textarea {
 
     box-shadow: 2px 4px 5px 0px #00000040;
 
-
     @media (min-width: 768px) {
         max-width: 305px;
         justify-content: space-around;
 
         border-radius: 20px;
-
 
     }
 }
@@ -776,12 +727,9 @@ textarea {
 
     font-size: 22px;
     font-weight: 700;
-    line-height: 1.17;
     text-align: center;
 
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
-
-
 
 }
 
@@ -789,16 +737,12 @@ textarea {
 
     color: var(--text-card-text);
 
-
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.17;
     text-align: center;
 }
 
-
-
-/* R E S U L T S//////////////////////////////////////////////////////////////// */
+/* R E S U L T S //////////////////////// */
 .result-bg {
 
     padding: 30px 20px 90px 20px;
@@ -814,7 +758,6 @@ textarea {
 
 }
 
-
 .results__title {
 
     margin-bottom: 20px;
@@ -823,13 +766,12 @@ textarea {
 
     font-size: 34px;
     font-weight: 700;
-    line-height: 1.17;
+
     text-align: center;
 
     @media (min-width: 768px) {
 
         margin-bottom: 58px;
-
         font-size: 52px;
 
     }
@@ -838,7 +780,6 @@ textarea {
 
 @media (min-width: 768px) {
     .results__description-block {
-
 
         border: 0;
         padding: 40px 98px 40px 40px;
@@ -851,7 +792,6 @@ textarea {
         overflow: hidden;
     }
 }
-
 
 .results__description {
     display: flex;
@@ -870,12 +810,10 @@ textarea {
     overflow: hidden;
 }
 
-
 .results__description-text {
     color: var(--text-card-text);
     font-size: 18px;
     font-weight: 400;
-    line-height: 1.17;
     text-align: left;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -886,8 +824,6 @@ textarea {
 
     }
 }
-
-
 
 .results__image {
     width: 180px;
