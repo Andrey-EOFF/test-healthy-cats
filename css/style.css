@@ -137,7 +137,8 @@ textarea {
 /* Header ////////////////////////////////////////////////// */
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    
     align-items: center;
     position: absolute;
     top: 10px;
@@ -151,6 +152,8 @@ textarea {
     @media (min-width: 768px) {
         padding-top: 50px;
         height: 100px;
+
+        justify-content: space-around;
     }
 }
 

@@ -39,15 +39,33 @@ window.onload = function () {
   startTimer(twoHours, display);
 };
 
+// -- відправка форми -- //
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".order-form");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    alert("Форма відправлена!");
+
+    form.reset();
+  });
+});
 
 // -- дата у формі -- //
 var today = new Date();
 
 var day = today.getDate();
-var month = today.getMonth() + 1; 
+var month = today.getMonth() + 1;
 var year = today.getFullYear();
 
-var formattedDate = (day < 10 ? '0' : '') + day + '.' + (month < 10 ? '0' : '') + month + '.' + year;
+var formattedDate =
+  (day < 10 ? "0" : "") +
+  day +
+  "." +
+  (month < 10 ? "0" : "") +
+  month +
+  "." +
+  year;
 
-document.getElementById('order-date').textContent = formattedDate;
-
+document.getElementById("order-date").textContent = formattedDate;
