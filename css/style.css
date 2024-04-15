@@ -626,8 +626,8 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url(/images/about-bg-img.png);
-
+    background: url(/images/about-bg.webp);
+    background-size: contain;
     padding: 48px;
 }
 
